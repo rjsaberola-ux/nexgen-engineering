@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News & Updates | NexGen Engineering</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="index.html" class="logo">
+            NEXGEN<span>ENGINEERING</span>
+        </a>
+
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="index.html#about">ABOUT</a>
+            <a href="index.html#services">SERVICES</a>
+            <a href="news.html" class="active">NEWS & UPDATES</a>
+            <a href="index.html#contact">CONTACT</a>
+        </nav>
+    </header>
+
+    <!-- NEWS BANNER -->
+    <section class="news-banner">
+        <p class="eyebrow">CORPORATE NEWSROOM</p>
+        <h1>NEWS & UPDATES</h1>
+        <p>
+            Discover the latest announcements, engineering developments,
+            projects and activities of NexGen Engineering Solutions.
+        </p>
+    </section>
+
+    <!-- NEWS CONTENT -->
+    <section class="section">
+
+        <p class="section-tag">STAY INFORMED</p>
+        <h2>THE LATEST FROM NEXGEN</h2>
+
+        <!-- SEARCH -->
+        <div class="news-search">
+            <input
+                type="text"
+                id="newsSearch"
+                placeholder="Search company news..."
+            >
+        </div>
+
+        <!-- CATEGORY FILTERS -->
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">ALL NEWS</button>
+            <button class="filter-btn" data-filter="technology">TECHNOLOGY</button>
+            <button class="filter-btn" data-filter="project">PROJECTS</button>
+            <button class="filter-btn" data-filter="sustainability">SUSTAINABILITY</button>
+            <button class="filter-btn" data-filter="safety">SAFETY</button>
+            <button class="filter-btn" data-filter="community">COMMUNITY</button>
+            <button class="filter-btn" data-filter="partnership">PARTNERSHIPS</button>
+        </div>
+
+        <!-- NEWS GRID -->
+        <div class="news-grid" id="newsGrid">
+
+            <article class="news-card" data-category="technology">
+                <div class="news-image news-image-one"></div>
+                <div class="news-content">
+                    <span class="news-category">TECHNOLOGY</span>
+                    <small>NOVEMBER 05, 2026</small>
+                    <h3>NexGen Introduces Advanced 3D Modeling and Prototyping Services</h3>
+                    <p>Discover our expanded engineering capabilities through modern CAD and prototyping technology.</p>
+                    <a href="article.html?id=technology">READ FULL ARTICLE →</a>
+                </div>
+            </article>
+
+            <article class="news-card" data-category="project">
+                <div class="news-image news-image-two"></div>
+                <div class="news-content">
+                    <span class="news-category">PROJECT MILESTONE</span>
+                    <small>OCTOBER 28, 2026</small>
+                    <h3>Successful Mechanical System Improvement Project</h3>
+                    <p>Our engineering team completes a mechanical system improvement project for a manufacturing facility.</p>
+                    <a href="article.html?id=project">READ FULL ARTICLE →</a>
+                </div>
+            </article>
+
+            <article class="news-card" data-category="sustainability">
+                <div class="news-image news-image-three"></div>
+                <div class="news-content">
+                    <span class="news-category">SUSTAINABILITY</span>
+                    <small>OCTOBER 15, 2026</small>
+                    <h3>NexGen Launches Renewable Energy Consultation Services</h3>
+                    <p>Supporting businesses in exploring sustainable and energy-efficient solutions.</p>
+                    <a href="article.html?id=energy">READ FULL ARTICLE →</a>
+                </div>
+            </article>
+
+            <article class="news-card" data-category="safety">
+                <div class="news-image news-image-four"></div>
+                <div class="news-content">
+                    <span class="news-category">SAFETY</span>
+                    <small>SEPTEMBER 30, 2026</small>
+                    <h3>Strengthening Workplace Safety and Quality Assurance</h3>
+                    <p>Improving workplace inspection programs and engineering safety standards.</p>
+                    <a href="article.html?id=safety">READ FULL ARTICLE →</a>
+                </div>
+            </article>
+
+            <article class="news-card" data-category="community">
+                <div class="news-image news-image-five"></div>
+                <div class="news-content">
+                    <span class="news-category">COMMUNITY</span>
+                    <small>SEPTEMBER 12, 2026</small>
+                    <h3>Engineering Awareness and Technical Skills Workshop</h3>
+                    <p>Introducing students to engineering technologies and practical applications.</p>
+                    <a href="article.html?id=community">READ FULL ARTICLE →</a>
+                </div>
+            </article>
+
+            <article class="news-card" data-category="partnership">
+                <div class="news-image news-image-six"></div>
+                <div class="news-content">
+                    <span class="news-category">PARTNERSHIP</span>
+                    <small>AUGUST 20, 2026</small>
+                    <h3>NexGen Establishes Strategic Engineering Partnership</h3>
+                    <p>Building stronger industry connections to expand engineering capabilities.</p>
+                    <a href="article.html?id=partnership">READ FULL ARTICLE →</a>
+                </div>
+            </article>
+
+        </div>
+
+        <p id="noResults" class="no-results" hidden>
+            No news articles found. Try another search or category.
+        </p>
+
+    </section>
+
+    <footer>
+        <div class="logo">NEXGEN<span>ENGINEERING</span></div>
+        <p>Engineering Innovation. Building Tomorrow.</p>
+        <p>© 2026 NexGen Engineering Solutions. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

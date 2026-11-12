@@ -1,0 +1,506 @@
+
+/* =================================
+   NEXGEN ENGINEERING WEBSITE
+   INDUSTRIAL DESIGN
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #111820;
+    color: #E8EDF2;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.7;
+}
+
+/* NAVIGATION */
+
+.navbar {
+    background: #0A1119;
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    border-bottom: 1px solid #273746;
+}
+
+.logo {
+    color: white;
+    text-decoration: none;
+    font-size: 23px;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    display: block;
+    color: #279BE6;
+    font-size: 11px;
+    letter-spacing: 4px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+}
+
+nav a {
+    color: #CBD5DF;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    color: #279BE6;
+}
+
+/* HERO SECTION */
+
+.hero {
+    min-height: 560px;
+    display: flex;
+    align-items: center;
+    padding: 80px 9%;
+    position: relative;
+    background:
+        linear-gradient(90deg, rgba(5,13,22,0.96), rgba(5,13,22,0.65)),
+        url("https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=1800&q=85");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.eyebrow,
+.section-tag {
+    color: #279BE6;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.hero h1 {
+    font-size: clamp(45px, 7vw, 76px);
+    line-height: 1.08;
+    margin: 22px 0;
+    font-weight: 900;
+    letter-spacing: -2px;
+}
+
+.hero-description {
+    color: #C3CFDA;
+    max-width: 520px;
+    margin-bottom: 30px;
+}
+
+.hero-label {
+    position: absolute;
+    bottom: 20px;
+    right: 7%;
+    color: #AAB6C1;
+    font-size: 11px;
+}
+
+/* BUTTONS */
+
+.btn {
+    display: inline-block;
+    padding: 13px 25px;
+    background: #168DDB;
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border: 1px solid #168DDB;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: transparent;
+    color: #55B9FF;
+}
+
+/* GENERAL SECTIONS */
+
+.section {
+    padding: 80px 8%;
+}
+
+.section h2 {
+    font-size: clamp(27px, 4vw, 40px);
+    line-height: 1.2;
+    margin: 15px 0 20px;
+    color: white;
+}
+
+.section-description {
+    max-width: 720px;
+    color: #AAB6C1;
+    margin-bottom: 35px;
+}
+
+.dark-section {
+    background: #0C141D;
+    border-top: 1px solid #273746;
+    border-bottom: 1px solid #273746;
+}
+
+/* SERVICES */
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    margin-top: 35px;
+}
+
+.service-card {
+    background: #151F2A;
+    border: 1px solid #293B4D;
+    padding: 28px;
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    border-color: #279BE6;
+    transform: translateY(-5px);
+}
+
+.service-number {
+    color: #279BE6;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.service-card h3 {
+    margin: 15px 0;
+    font-size: 17px;
+}
+
+.service-card p {
+    color: #AAB6C1;
+    font-size: 14px;
+}
+
+/* NEWS BANNER */
+
+.news-banner {
+    padding: 90px 8%;
+    background:
+        linear-gradient(90deg, rgba(6,14,23,0.95), rgba(6,14,23,0.72)),
+        url("https://images.unsplash.com/photo-1581092921461-eab62e97a780?auto=format&fit=crop&w=1800&q=85");
+    background-size: cover;
+    background-position: center;
+    border-bottom: 3px solid #168DDB;
+}
+
+.news-banner h1 {
+    font-size: clamp(40px, 6vw, 65px);
+    margin: 15px 0;
+}
+
+.news-banner p:last-child {
+    max-width: 650px;
+    color: #C3CFDA;
+}
+
+/* NEWS CARDS */
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.news-card {
+    background: #151F2A;
+    border: 1px solid #293B4D;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+    border-color: #279BE6;
+}
+
+.news-image {
+    height: 190px;
+    background-size: cover;
+    background-position: center;
+}
+
+.news-image-one {
+    background-image: url("https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=900&q=80");
+}
+
+.news-image-two {
+    background-image: url("https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?auto=format&fit=crop&w=900&q=80");
+}
+
+.news-image-three {
+    background-image: url("https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=900&q=80");
+}
+
+.news-image-four {
+    background-image: url("https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=900&q=80");
+}
+
+.news-image-five {
+    background-image: url("https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=900&q=80");
+}
+
+.news-image-six {
+    background-image: url("https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=900&q=80");
+}
+
+.news-content {
+    padding: 23px;
+}
+
+.news-category {
+    display: block;
+    color: #279BE6;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 9px;
+}
+
+.news-content small {
+    color: #8293A3;
+    font-size: 11px;
+}
+
+.news-content h3 {
+    font-size: 18px;
+    line-height: 1.4;
+    margin: 12px 0;
+    color: white;
+}
+
+.news-content p {
+    color: #AAB6C1;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.news-content a {
+    color: #279BE6;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.news-content a:hover {
+    color: white;
+}
+
+/* NEWS SEARCH AND FILTER */
+
+.news-search {
+    margin: 30px 0 20px;
+}
+
+.news-search input {
+    width: 100%;
+    max-width: 500px;
+    padding: 15px;
+    background: #151F2A;
+    border: 1px solid #34485A;
+    color: white;
+    outline: none;
+    font-size: 14px;
+}
+
+.news-search input:focus {
+    border-color: #279BE6;
+}
+
+.filter-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.filter-btn {
+    background: #151F2A;
+    color: #C3CFDA;
+    border: 1px solid #34485A;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 11px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background: #168DDB;
+    color: white;
+    border-color: #168DDB;
+}
+
+.no-results {
+    color: #AAB6C1;
+    text-align: center;
+    padding: 30px;
+}
+
+/* CENTER BUTTON */
+
+.center-button {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* CONTACT */
+
+.contact-section {
+    text-align: center;
+    padding: 85px 8%;
+    background: #0B141D;
+    border-top: 1px solid #293B4D;
+}
+
+.contact-section h2 {
+    font-size: clamp(30px, 5vw, 48px);
+    line-height: 1.2;
+    margin: 20px 0;
+}
+
+.contact-section p {
+    color: #AAB6C1;
+    margin-bottom: 25px;
+}
+
+/* ARTICLE PAGE */
+
+.article-section {
+    max-width: 950px;
+    margin: auto;
+    padding: 65px 7%;
+    min-height: 65vh;
+}
+
+.back-link {
+    color: #279BE6;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.article-cover {
+    height: 350px;
+    margin: 30px 0;
+    background-size: cover;
+    background-position: center;
+}
+
+.article-meta {
+    color: #279BE6;
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.article-title {
+    font-size: clamp(30px, 5vw, 48px);
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.article-body {
+    color: #C3CFDA;
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+.article-body p {
+    margin-bottom: 22px;
+}
+
+.article-body h3 {
+    color: white;
+    margin: 30px 0 12px;
+}
+
+/* FOOTER */
+
+footer {
+    background: #080E14;
+    padding: 35px 8%;
+    text-align: center;
+    border-top: 1px solid #293B4D;
+}
+
+footer p {
+    color: #8795A3;
+    font-size: 12px;
+    margin-top: 12px;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 900px) {
+    .news-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 650px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 10px;
+    }
+
+    .hero {
+        min-height: 480px;
+    }
+
+    .service-grid,
+    .news-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section {
+        padding: 55px 6%;
+    }
+
+    .news-banner {
+        padding: 65px 6%;
+    }
+
+    .article-cover {
+        height: 230px;
+    }
+}
